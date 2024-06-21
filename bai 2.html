@@ -7,10 +7,14 @@
 <body>
 <script>
     let age = +prompt("Nhap vao so tuoi cua ban");
-    if (age <16){
-        document.write("Ban chua du dieu kien de hoc lop 10");
+    if (age > 0) {
+        if (age < 16) {
+            document.write("Ban chua du dieu kien de hoc lop 10");
+        } else {
+            document.write("Ban du dieu kien de hoc lop 10");
+        }
     } else {
-        document.write("Ban du dieu kien de hoc lop 10");
+        alert("Nhap lai so tuoi dung cua ban");
     }
 </script>
 </body>

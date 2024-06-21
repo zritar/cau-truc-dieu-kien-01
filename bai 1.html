@@ -8,7 +8,9 @@
 <script>
     let a = +prompt("Nhap a");
     let b = +prompt("Nhap b");
-    if (a % b === 0){
+    if (b === 0) {
+        document.write("Khong the chia cho 0, nhap lai b");
+    } else if (a % b === 0) {
         document.write("a chia het cho b");
     } else {
         document.write("a khong chia het cho b");
