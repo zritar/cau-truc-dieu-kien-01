@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let score1 = +prompt("Nhap diem bai kiem tra");
+    let score2 = +prompt("Nhap diem bai giua ky");
+    let score3 = +prompt("Nhap diem bai cuoi ky");
+    let result = (score1 + score2 * 2 + score3 * 3) / 6;
+    document.write("Diem trung binh la " + result + "<br>");
+    if (result >= 8) {
+        document.write("Hoc sinh Gioi");
+    } else if (result >= 6.5) {
+        document.write("Hoc sinh Kha");
+    } else if (result >= 4.5) {
+        document.write("Hoc sinh Trung binh");
+    } else {
+        document.write("Hoc sinh Yeu");
+    }
+</script>
+</body>
+</html>

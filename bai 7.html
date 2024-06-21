@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+<!--    10 phut dau tien :200d /1phut-->
+    // 20p tiep theo :500d/1phut
+    // 30p tiep theo: 1000/1 phut
+    let number = +prompt("Nhap vao so phut da goi");
+    let result;
+    if (number <= 10){
+        result = (number *200);
+        document.write(result + "VND");
+    } else if (number <= 30){
+        result = (10 *200+ (number -10)*500 );
+        document.write(result + "VND");
+    } else if (number <= 60){
+        result = (10* 200 + 20*500 + (number -30)*1000);
+        document.write(result + "VND");
+    } else {
+        document.write("Nhap lai so phut");
+    }
+</script>
+</body>
+</html>
